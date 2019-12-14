@@ -102,7 +102,7 @@ header {
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;  
 }
 
 header img {
@@ -244,20 +244,6 @@ section .row{
     }
 }
 
-/* ****** Section Projects ***** */
-
-.carousel-item img{
-    width: 100%;
-    max-height: 50em;
-}
-
-.carousel-item h2{
-    color: #6acef3;
-}
-
- h3, h4{
-    color: #2797c0;
-}
 
 
 #portfolio .portfolio-item {
@@ -580,6 +566,7 @@ span{
 }
 
 .location-map{
+    box-shadow: 0 0 0 2px #007bff;
     height: 400px;
     width: 400px;
 
@@ -595,6 +582,74 @@ span{
     }
 }
 
-.item-content{
-    height: 200px;
+/* ****** Section Projects ***** */
+/* !Image collapse for small desktops 
+ TODO ... 
+*/
+    
+
+section.projects{
+    padding: 0;    
+}
+
+section.container,
+.carousel-item, 
+.carousel-item img,
+#myCarousel,
+.carousel-inner{
+    width: 100%;
+}
+
+.carousel{
+    box-shadow: 0 0 0 2px rgba(0,0,0,.15);
+}
+
+.carousel-item{
+    height: 600px;
+}
+.carousel-item-content{
+    height: 30%;
+    margin-bottom: 1em;
+}
+
+@media(max-width:400px){
+    .carousel-item-content p{
+        font-size: 3em;
+    }
+
+    .carousel-item-content{
+        margin-bottom: 15%;
+    }
+}
+.carousel-item-content p{
+    font-size: 1em;
+}
+
+.carousel-item img{
+    height: 70%;
+}
+
+.carousel-item h2{
+    color: #6acef3;
+}
+
+#myCarousel{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+ h3, h4{
+    color: #2797c0;
+}
+
+section#about,
+section#education,
+section#skills,
+section#work,
+section#projects{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
