@@ -95,12 +95,14 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #5fbee4;
+    background-image: url("https://cdn.dodowallpaper.com/full/871/binary-wallpapers-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 50px;   
 }
 
 header img {
@@ -202,7 +204,14 @@ section.success a.active {
     color: #2c3e50;
 }
 
+section.success h3, section.success h4{
+    color: whitesmoke;
+    
+}
 
+section .row{
+    padding-bottom: 25px;
+}
 
 #skills ul{
     list-style: none;
@@ -225,12 +234,29 @@ section.success a.active {
     }
 }
 
+/* ****** Section Projects ***** */
+
+.carousel-item img{
+    width: 100%;
+    height: 50em;
+}
+
+.carousel-item h2{
+    color: #6acef3;
+}
+
+ h3, h4{
+    color: #2797c0;
+}
+
+
 #portfolio .portfolio-item {
     right: 0;
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0 0 15px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -257,7 +283,7 @@ section.success a.active {
 }
 
 #portfolio .portfolio-item  #portfolio-hover-content p{
-    font-size: 14px;
+    font-size: 18px;
     color: whitesmoke;
 }
 
@@ -340,8 +366,6 @@ a.portfolio-link{
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
-    vertical-align: middle;
-    vertical-align: baseline;
     opacity: 0;
     -webkit-transition: top .3s ease, opacity .3s ease;
     -moz-transition: top .3s ease, opacity .3s ease;
@@ -521,4 +545,12 @@ footer .footer-below {
     .navbar-brand {
         font-size: 11px;
     }
+}
+
+P{
+    font-size: 18px;
+}
+
+span{
+    font-size: 14px;
 }

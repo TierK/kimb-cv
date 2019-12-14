@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CV front end full stack">
     <meta name="author" content="Kim B">
-    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
     <title>Kim Web Dev</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
@@ -17,6 +17,9 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -79,8 +82,8 @@
             </div>
         </div>
     </header>
-     <!-- About Section -->
-     <section id="about">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -94,15 +97,15 @@
                 </div>
                 <div class="col-lg-4">
                     <p>Seeking new opportunities to advance and unleash my full potential as a developer, while contributing to the development of industry leading organizations.</p>
+                </div>
             </div>
-        </div>
     </section>
-     <!-- Slills Grid Section -->
-     <section id="skills" class="success">
+    <!-- Slills Grid Section -->
+    <section id="skills" class="success">
         <div class="container ">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Skills</h2>
+                    <h2 class="animated bounce">Skills</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -127,32 +130,86 @@
         </div>
     </section>
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>My Projects</h2>
+                    <h2 class="animated bounce">My Projects</h2>
                     <hr class="star-primary">
                 </div>
-            </div>
-            <div class="portfolio-item row">
+                <div class="portfolio-item col-md">
+                    <a href="https://codepen.io/TierKim/full/zLKoqd" target="_blank" class="portfolio-link" data-toggle="modal">
+                        <div id="portfolio-hover-content">
+                            <h4>Golden Studio</h4>
+                            <p></p>
+                            <p> Lending Page for design studio. Click to view
+                                <a href="https://codepen.io/TierKim/full/zLKoqd" target="_blank"> Demo </a>
+                            </p>
+                            <p>Builded on pure HTML + CSS</p>
+                        </div>
+                        <img src="img/goldenstudio.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="portfolio-item col-md">
                     <a href="https://tierk.github.io/instagram-ui/" target="_blank" class="portfolio-link" data-toggle="modal">
-                <div class="col-lg-4">
-                            <div class="col-lg-4" id="portfolio-hover-content">
+                        <div id="portfolio-hover-content">
                             <h4>Instagram</h4>
                             <p></p>
                             <p> Social Network builded on React.js. Click to view
-                                <a href="https://tierk.github.io/instagram-ui/" target="_blank"><br/> Demo </a> | 
-                                <a href="https://github.com/TierK/instagram-ui" target="_blank">Source UI</a> |  
+                                <a href="https://tierk.github.io/instagram-ui/" target="_blank">
+                                    <br/> Demo </a> |
+                                <a href="https://github.com/TierK/instagram-ui" target="_blank">Source UI</a> |
                                 <a href="https://github.com/TierK/instagram-api" target="_blank">Source API</a>
                             </p>
                             <p>Responsive SPA Includes Feed page with different user posts, user profile, Posts CRUD, User registration, login, logout </p>
-                            <p>For presentation i use fake server fetch, but the code includes full integration with API</p>  
+                            <p>For presentation i use fake server fetch, but the code includes full integration with API</p>
                         </div>
                         <img src="img/socialnetwork.png" class="img-responsive" alt="">
-                     </div>      
-                </a>
+
+                    </a>
+                </div>
             </div>
+        </div>
+    </section> -->
+    <!-- Alternative projects -->
+    <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class = "item-content text-center">
+                            <h2 class="animated bounce">Instagram</h2>
+                            <p> Social Network builded on React.js. Click to view
+                                <a href="https://tierk.github.io/instagram-ui/" target="_blank">
+                                    <br/> Demo </a> |
+                                <a href="https://github.com/TierK/instagram-ui" target="_blank">Source UI</a> |
+                                <a href="https://github.com/TierK/instagram-api" target="_blank">Source API</a>
+                            </p>
+                            <p>Responsive SPA Includes Feed page with different user posts, user profile, Posts CRUD, User registration, login, logout </p>
+                            <p>For presentation i use fake server fetch, but the code includes full integration with API</p>
+                    </div>
+                    <img src="img/socialnetwork.png" alt="First Slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/goldenstudio.png" alt="Second Slide">
+                </div>
+                <div class="carousel-item"> 
+                    <img src="img/onlineshop.png" alt="Third Slide">
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </section>
     <!-- Education Section -->
@@ -160,7 +217,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Education</h2>
+                    <h2 class="animated bounce">Education</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -168,17 +225,16 @@
                 <li>
                     <div class="row">
                         <div class="col-lg-8">
-                            <h4>Fulll Stack Development - Netcraft Academy </h4> <span>May 2019-April 2020</span>
-                            <p>A professional training program by Netcraft, a leading UX & FED agency in Israel. An intensive six-month course in addition to consultation during work on the Final Project.
-                                 Extensive practice, weekly homework assignments, personal GitHub projects and code reviews by industry professionals.</p>
-                            <p>Final Project: instagram prototype Front-end UI and Back-end Api versions</p>     
+                            <h3>Fulll Stack Development - Netcraft Academy </h3> <span>May 2019-April 2020</span>
+                            <p>A professional training program by Netcraft, a leading UX & FED agency in Israel. An intensive six-month course in addition to consultation during work on the Final Project. Extensive practice, weekly homework assignments, personal GitHub projects and code reviews by industry professionals.</p>
+                            <p>Final Project: instagram prototype Front-end UI and Back-end Api versions</p>
                         </div>
                     </div>
                 </li>
                 <li class="top-buffer">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h4>Taught myself</h4> <span>Early 2018 till now</span>
+                            <h3>Taught myself</h3> <span>Early 2018 till now</span>
                             <p>Basic Front-end development using HTML5, CSS3, JS. My goal was to learn how to make Landing pages that must be triggering, responsive, animated and user friendly</p>
                             <p>Now, after Netcraft course graduation my next goal learn Vue.js to make amazing SPA using React and Vue </p>
                         </div>
@@ -188,80 +244,80 @@
         </div>
         </div>
     </section>
-<!-- Work Experience  Section -->
-<section id="work">
-    <div class="container ">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Work</h2>
-                <hr class="star-primary">
+    <!-- Work Experience  Section -->
+    <section id="work">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="animated bounce">Work Experience</h2>
+                    <hr class="star-primary">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Control room shift manager at <a href="https://corporate.888.com/" target="_blank">888 Holdings, Herzeliya Pituah</a> Company</h4>
-                <span>2019</span> 
-                <p>Manage security tickets from ArcSight system. </p>
-                <p>Monitor cameras and Alarm systems in global world oﬀices.</p>
-                <p>Shift manager of security lobby and patrol.</p>
-                <p>Diagnose, rotate and resolve any security issues. Create requests and monitor the implementation of repair works on the building
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Control room shift manager at <a href="https://corporate.888.com/" target="_blank">888 Holdings, Herzeliya Pituah</a> Company</h4>
+                    <span>2019</span>
+                    <p>Manage security tickets from ArcSight system. </p>
+                    <p>Monitor cameras and Alarm systems in global world oﬀices.</p>
+                    <p>Shift manager of security lobby and patrol.</p>
+                    <p>Diagnose, rotate and resolve any security issues. Create requests and monitor the implementation of repair works on the building
                     </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Test Automation Engineer at <a href="https://www.sberbank.ru/" target="_blank">Sberbank, Moscow</a> Company</h4>
-                <span>February 2017  –  December 2018</span>
-                <p>Manage sprint reviews and daily scrum (stand up) meetings to touch base with whole team and ensure that all members were performing satisfactorily.</p> 
-                <p>Develop SAP ERP and SAP HCM automated tests using SAP CBTA tool (Solution Manager 7.2 and older versions) for Smoke and Regression testing</p>
-                <p>Update and optimization automated tests </p>
-                <p>Analyze test plans and test cases</p>
-                <p>Manage test profiles in SDC in SQC, SCP (Solution Manager)</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Test Automation Engineer at <a href="https://www.sberbank.ru/" target="_blank">Sberbank, Moscow</a> Company</h4>
+                    <span>February 2017  –  December 2018</span>
+                    <p>Manage sprint reviews and daily scrum (stand up) meetings to touch base with whole team and ensure that all members were performing satisfactorily.</p>
+                    <p>Develop SAP ERP and SAP HCM automated tests using SAP CBTA tool (Solution Manager 7.2 and older versions) for Smoke and Regression testing</p>
+                    <p>Update and optimization automated tests </p>
+                    <p>Analyze test plans and test cases</p>
+                    <p>Manage test profiles in SDC in SQC, SCP (Solution Manager)</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <h4>Senior Release Manager (Process Engineer) at Sberbank-Technology, Moscow at <a href="https://www.sberbank.ru/" target="_blank">Sberbank</a> Company</h4>
                     <span>November 2015  –  February 2017</span>
-                    <p>Managed all release processes for the SAP solution servers landscape </p> 
+                    <p>Managed all release processes for the SAP solution servers landscape </p>
                     <p>Assessed and managed release risks and implemented best practices to mitigate those risks </p>
                     <p>Coordinated delivery of developed changes (Hot Fix) across all SAP landscape from Dev to Prod</p>
                     <p>Leads engineering activity regarding process optimization and capacity improvement</p>
                     <p>Created trainings and documentation for junior colleges and other departments</p>
                 </div>
-        </div>
-        <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
                     <h4>Technical Project Analyst at <a href="https://www.linkedin.com/company/support-machines/" target="_blank">Support Machines, Petach-Tikva</a> Company</h4>
                     <span>February 2013  –  December 2014 </span>
-                    <p>Responsibility for project management of Automated Virtual Agents. In charge of knowledge base development, maintenance DB, quality assurance and support.  </p> 
-                    <p>Creating product modules and scripts. Building Customer guides and training presentations in diﬀerent languages (Eng, Rus, Heb).  </p>
+                    <p>Responsibility for project management of Automated Virtual Agents. In charge of knowledge base development, maintenance DB, quality assurance and support. </p>
+                    <p>Creating product modules and scripts. Building Customer guides and training presentations in diﬀerent languages (Eng, Rus, Heb). </p>
                     <p>Fix and debug web applications </p>
                     <p>Client side analyse, develop extra patches, and interface changes</p>
-                    <p>Adapted product to web page style and brand style of company </p>     
+                    <p>Adapted product to web page style and brand style of company </p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>IT Help Desk Engineer at <a href="https://www.ness.com" target="_blank"> Outsource Companies, Tel-Aviv </a> Company</h4>
+                    <span>September 2007  –  October 2011 </span>
+                    <p>Troubleshooting, testing and resolving technical issues software, hardware and system problems</p>
+                    <p>Support for internal employment by remote control and front hand-on </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>System Administration Team leader  <a href="https://www.ness.com" target="_blank"> Military IT System and security Administrator at IDF “Teleprocessing Corps”, PUM Glilot</a></h4>
+                    <span>September 2005 - September 2007 </span>
+                    <p>Managed system administrators team and Supervised</p>
+                    <p>Developed training program for users and junior administrators. System administrator </p>
+                    <p>Resolved computer hardware and software issues for military base staﬀ</p>
+                    <p>Supported internal IT technologies</p>
+                    <p>Did nightly Server backup procedures </p>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>IT Help Desk Engineer at <a href="https://www.ness.com" target="_blank"> Outsource Companies, Tel-Aviv </a> Company</h4>
-                <span>September 2007  –  October 2011 </span>
-                <p>Troubleshooting, testing and resolving technical issues software, hardware and system problems</p>
-                <p>Support for internal employment by remote control and front hand-on </p>  
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-lg-12">
-                <h4>System Administration Team leader  <a href="https://www.ness.com" target="_blank"> Military IT System and security Administrator at IDF “Teleprocessing Corps”, PUM Glilot</a></h4>
-                <span>September 2005 - September 2007 </span>
-               <p>Managed system administrators team and Supervised</p>
-               <p>Developed training program for users and junior administrators. System administrator </p>
-               <p>Resolved computer hardware and software issues for military base staﬀ</p>
-               <p>Supported internal IT technologies</p>
-               <p>Did nightly Server backup procedures </p>
-            </div>
-         </div>
-    </div>
-</section>
+    </section>
     <footer class="text-center" id="contact">
         <div class="footer-above">
             <div class="container">
@@ -274,7 +330,7 @@
                         <h3>Social network</h3>
                         <ul class="list-inline">
                             <li>
-                            <a href="https://www.facebook.com/kbondarchuk" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/kbondarchuk" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/kim-bondarchuk-3555b455/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
@@ -287,19 +343,19 @@
                     <div class="footer-col col-md-4">
                         <h3>Contacts</h3>
                         <ul class="list-inline">
-                        <li>
-                            <a href="mailto:ksenya.bondarchuk@gmail.com" target="_blank" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-email"></i>
-                            </a>
-                            <div class="email-text"> ksenya.bondarchuk@gmail.com </div>
-                        </li>
-                        <li>
-                            <a href="tel:+972533442478" target="_blank" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-whatsapp"></i>
-                            </a>
-                            <div class="phone-text"> +972 53 344 24 78 </div>
-                        </li>
-                    </ul>
+                            <li>
+                                <a href="mailto:ksenya.bondarchuk@gmail.com" target="_blank" class="btn-social btn-outline">
+                                    <i class="fa fa-fw fa-email"></i>
+                                </a>
+                                <div class="email-text"> ksenya.bondarchuk@gmail.com </div>
+                            </li>
+                            <li>
+                                <a href="tel:+972533442478" target="_blank" class="btn-social btn-outline">
+                                    <i class="fa fa-fw fa-whatsapp"></i>
+                                </a>
+                                <div class="phone-text"> +972 53 344 24 78 </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -314,12 +370,15 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript --> 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <!-- <script src="js/classie.js"></script> -->
     <script src="js/cbpAnimatedHeader.js"></script>
     <!-- Contact Form JavaScript -->
     <!--<script src="js/jqBootstrapValidation.js"></script>-->
     <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
