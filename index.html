@@ -28,9 +28,9 @@
 
 <body id="page-top" class="index">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-fixed-top bg-dark" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark" role="navigation">
         <div class="container">
-                <a class="navbar-brand" href="#page-top">Kim Bondarchuk   |   Web Developer</a>
+                <a class="navbar-brand hidden-xs-block navbar-change-content" href="#page-top">Kim Bondarchuk   |   Web Developer</a>
             <div class="navbar-header">
                 <button type="button" id="navbar-toggler" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="animated bounce">About</h2>
-                    <hr class="star-light">
+                    <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="animated bounce">Skills</h2>
-                    <hr class="star-primary">
+                    <hr class="star-light">
                 </div>
             </div>
             <div class="row-fluid">
@@ -170,6 +170,12 @@
     </section> -->
     <!-- Alternative projects -->
     <section>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="animated bounce">My Projects</h2>
+                            <hr class="star-primary">
+                        </div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
@@ -181,7 +187,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class = "item-content text-center">
-                            <h2 class="animated bounce">Instagram</h2>
+                            <h3 class="animated bounceInLeft">Instagram</h3>
                             <p> Social Network builded on React.js. Click to view
                                 <a href="https://tierk.github.io/instagram-ui/" target="_blank">
                                     <br/> Demo </a> |
@@ -208,6 +214,8 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+        </div>
+            </div>
     </section>
     <!-- Education Section -->
     <section class="success" id="education">
@@ -320,42 +328,54 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Kfar-Saba</p>
+                        <h3 class="animated fadeInDown">Location</h3>
+                        <p class="animated fadeInDown"> Kfar-Saba</p>
+                        <iframe class="location-map"frameborder="0" scrolling="no" 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=34.88802909851075%2C32.172742805565505%2C34.900345802307136%2C32.18512897441059&amp;layer=mapnik&amp;marker=32.17893610059082%2C34.894187450408936" 
+                            style="border: 1px solid black">
+                        </iframe>
+                        <br/>
+                        <small>
+                            <a href="https://www.openstreetmap.org/?mlat=32.1789&amp;mlon=34.8942#map=16/32.1789/34.8942">
+                             Click for full screen map</a>
+                        </small>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Social network</h3>
+                        <h3 class="animated fadeInDown">Social network</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li class="animated fadeInDown">
                                 <a href="https://www.facebook.com/kbondarchuk" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li>
+                            <li class="animated fadeInDown">
                                 <a href="https://www.linkedin.com/in/kim-bondarchuk-3555b455/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li>
+                            <li class="animated fadeInDown">
                                 <a href="https://github.com/TierK" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Contacts</h3>
+                        <h3 class="animated fadeInDown">Contacts</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li class="animated fadeInDown">
                                 <a href="mailto:ksenya.bondarchuk@gmail.com" target="_blank" class="btn-social btn-outline">
-                                    <i class="fa fa-fw fa-email"></i>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </a>
-                                <div class="email-text"> ksenya.bondarchuk@gmail.com </div>
-                            </li>
-                            <li>
+                                <div class="email-text animated fadeInDown"> ksenya.bondarchuk@gmail.com </div>
+                            </li >
+                            <li class="animated fadeInDown">
                                 <a href="tel:+972533442478" target="_blank" class="btn-social btn-outline">
                                     <i class="fa fa-fw fa-whatsapp"></i>
                                 </a>
-                                <div class="phone-text"> +972 53 344 24 78 </div>
+                                <div class="phone-text animated fadeInDown"> +972 53 344 24 78 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="footer-copyright text-center">© 2019 Copyright:
+                <a href="mailto:ksenya.bondarchuk@gmail.com"> Kim Bondarchuk</a>
+              </div>
         </div>
     </footer>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

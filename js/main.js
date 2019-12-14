@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {
@@ -38,3 +34,19 @@ $('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 
+
+//change nav-brand text on sm
+
+ChangeContentOnSm();
+$(window).resize(function() {
+    ChangeContentOnSm();
+});
+
+function ChangeContentOnSm(){
+      if (window.innerWidth < 600 ){
+        $('.navbar-change-content').text('kim b | web dev');
+      }else{
+        $('.navbar-change-content').text('Kim Bondarchuk   |   Web Developer');
+      }
+
+}
