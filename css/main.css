@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 .sub {
     width: 50px;
     height: 100%;
@@ -30,7 +34,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #007bff;
+    color: #023872;
 }
 
 .mail {
@@ -172,10 +176,17 @@ header .intro-text .skills {
 }
 
 .navbar {
+    display: flex;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
-    opacity: 0.7;
+    text-shadow: 1px 1px 3px #053446 #ffffff;
+    min-height: 5rem;
+}
+
+.navbar a:hover {
+    opacity: 1;
+    background-color: #61767e;
 }
 
 .navbar a:focus {
@@ -190,6 +201,11 @@ header .intro-text .skills {
     outline: 0;
 }
 
+.nav-fill{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
 
 section {
     padding: 100px 0;
