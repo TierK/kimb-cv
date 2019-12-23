@@ -136,8 +136,44 @@ header{
 @media(max-width:730px) {
     .background-transform .logo{
           width: 80%;
+          
+      }
+
+      .background-transform{
+        margin-top: 20%;
       }
   }
+  
+@media(max-width:600px) {
+      .background-transform{
+        margin-top: 30%;
+      }
+  }
+
+
+  @media(max-width:500px) {
+
+      .background-transform{
+        margin-top: 40%;
+      }
+  }
+
+
+  
+  @media(max-width:400px) {
+
+    .background-transform{
+      margin-top: 50%;
+    }
+}
+
+@media(max-width:300px) {
+
+    .background-transform{
+      margin-top: 60%;
+    }
+}
+  
 
 header .intro-text .name {
     display: block;
