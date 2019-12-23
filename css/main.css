@@ -96,37 +96,48 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-header {
+header{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.background-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.dodowallpaper.com/full/871/binary-wallpapers-5.jpg');
+
+  }
+
+  .background-transform {
+    box-sizing: border-box;
+    min-height: 100vh;
     text-align: center;
-    color: #fff;
-    background-image: url("https://cdn.dodowallpaper.com/full/871/binary-wallpapers-5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    align-items: center;
+    padding-top: 20%;
+    transform-style: inherit;
+    width: 100vw;
+  }
+
+.scrollme
+{
+  padding:2em;
+  perspective:100vh;
 }
 
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;  
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-    height: 20em;
-}
-
-@media(max-width:700px){
-    header img {
-        height: 10em;
-    }
+.animateme
+{
+  padding:10%;
+  transform-origin:center center center;
 }
 
 
-@media(min-width:900px){
-    header img {
-        height: 30em;
-    }
-}
+@media(max-width:730px) {
+    .background-transform .logo{
+          width: 80%;
+      }
+  }
 
 header .intro-text .name {
     display: block;
@@ -140,6 +151,8 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+
+
 
 @media(min-width:768px) {
     header .container {
