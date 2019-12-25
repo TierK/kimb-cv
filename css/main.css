@@ -97,7 +97,7 @@ hr.star-primary:after {
 }
 
 header{
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
 }
 
@@ -669,9 +669,7 @@ section.container,
     box-shadow: 0 0 0 2px rgba(0,0,0,.15);
 }
 
-.carousel-item{
-    height: 600px;
-}
+
 .carousel-item-content{
     height: 30%;
     margin-bottom: 1em;
@@ -690,9 +688,6 @@ section.container,
     font-size: 1em;
 }
 
-.carousel-item img{
-    height: 70%;
-}
 
 .carousel-item h2{
     color: #6acef3;
