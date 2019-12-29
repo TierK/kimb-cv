@@ -252,13 +252,28 @@ header .intro-text .skills {
 
 .nav-fill{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
+@media (min-width: 992px){
+    #navbar-right{
+        flex-flow: wrap;
+    }
+}
+
+@media (max-width: 991.98px){
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    float: right;
+    width: fit-content;
+    }
+}
 section {
     padding: 100px 0;
-}
+}   
 
 section h2 {
     margin: 0;
@@ -289,6 +304,7 @@ section .row{
 }
 
 #skills ul{
+    padding: 20%;
     list-style: none;
     font-size: 25px;
     width: 60%;
@@ -309,39 +325,13 @@ section .row{
     }
 }
 
-
-
-#portfolio .portfolio-item {
-    right: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 0 15px;
-
+@media(max-width:600px) {
+    #skills .container .row .col{
+        margin: 0 20% 0 20%;
+    }
 }
 
-#portfolio .portfolio-item .portfolio-link {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
 
-#portfolio .portfolio-item  #portfolio-hover-content{
-    position: absolute;
-    font-size: 10px;
-    top:1;
-    left: 1;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-    width: 93%;
-    height: 94%;
-    opacity: 0;
-    color: whitesmoke;
-    text-shadow: 0 0 3px #0b90c0;
-    background: #2c3e50;
-}
 
 #portfolio .portfolio-item  #portfolio-hover-content p{
     font-size: 18px;
@@ -358,27 +348,6 @@ a.portfolio-link{
     color: #afe6fa;
 }
 
-#portfolio .portfolio-item  #portfolio-hover-content:hover{
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-    opacity: 0.9;
-}
-
-
-#portfolio .portfolio-item .portfolio-link{
-    opacity: 0.9;
-}
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
 
 .btn-outline {
     margin-top: 15px;
@@ -516,68 +485,84 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .moportfolio-hover-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+section.projects{
+    padding: 0;    
 }
 
-.portfolio-modal .moportfolio-hover-content h2 {
-    margin: 0;
-    font-size: 3em;
+section.container,
+.carousel-item, 
+#myCarousel,
+.carousel-inner{
+    width: 100%;
+    
 }
 
-.portfolio-modal .moportfolio-hover-content img {
-    margin-bottom: 30px;
+.carousel{
+    box-shadow: 0 0 0 2px rgba(0,0,0,.15);
 }
 
-.portfolio-modal .moportfolio-hover-content .item-details {
-    margin: 30px 0;
+
+.carousel-item-content{
+    height: 30%;
+    margin-bottom: 1em;
 }
 
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
+@media(max-width:400px){
+    .carousel-item-content p{
+        font-size: 3em;
+    }
+
+.carousel-item-content{
+        margin-bottom: 15%;
+    }
+}
+.carousel-item-content p{
+    font-size: 1em;
 }
 
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
+
+.carousel-item h2{
+    color: #6acef3;
 }
 
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+.carousel-item{   
+
+    
+}
+.carousel-item-img{
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+.carousel-item-img img{
+    height: 500px;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+
 }
 
-.portfolio-modal .modal-backdrop {
-    display: none;
-    opacity: 0;
+.carousel-item-img img:hover{
+    width: 115%;
+    height: 520px;
+    transition: all .4s;
+}
+
+
+#myCarousel{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 .top-buffer {
@@ -647,69 +632,15 @@ span{
     }
 }
 
-/* ****** Section Projects ***** */
-/* !Image collapse for small desktops 
- TODO ... 
-*/
-    
 
-section.projects{
-    padding: 0;    
-}
-
-section.container,
-.carousel-item, 
-.carousel-item img,
-#myCarousel,
-.carousel-inner{
-    width: 100%;
-}
-
-.carousel{
-    box-shadow: 0 0 0 2px rgba(0,0,0,.15);
-}
-
-
-.carousel-item-content{
-    height: 30%;
-    margin-bottom: 1em;
-}
-
-@media(max-width:400px){
-    .carousel-item-content p{
-        font-size: 3em;
-    }
-
-    .carousel-item-content{
-        margin-bottom: 15%;
-    }
-}
-.carousel-item-content p{
-    font-size: 1em;
-}
-
-
-.carousel-item h2{
-    color: #6acef3;
-}
-
-#myCarousel{
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-}
 
  h3, h4{
     color: #2797c0;
 }
 
 section#about,
-section#education,
 section#skills,
 section#work,
 section#projects{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 5%;
 }
