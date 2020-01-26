@@ -232,6 +232,20 @@ header .intro-text .skills {
     }
 }
 
+nav, footer{
+    background: #2c3e50;
+    animation: colorchange 10s;
+}
+    
+@keyframes colorchange
+{
+  0%   {background: #2c3e50;}
+  25%  {background: #3f5973;}
+  50%  {background: #5b80a4;}
+  75%  {background: #3f5973;}
+  100% {background: #2c3e50;}
+}
+
 .navbar, .cv{
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -444,7 +458,6 @@ section#work{
 footer{
     color: #fff;
     text-shadow: 0 0 1px black, 0 0 2px black;
-    background:#5d6979;
 }
 
 .cv{
@@ -657,7 +670,7 @@ span{
 
 }
 
-@media(max-width:550px){
+@media(max-width:1000px){
     footer .col-md-4{
         padding: 0;
     }
