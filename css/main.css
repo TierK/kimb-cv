@@ -8,6 +8,13 @@ body {
     overflow-x: hidden;
 }
 
+button{
+    background-color: inherit;
+    border: none;
+    color: rgb(51, 204, 255);
+}
+
+
 *{
     scroll-behavior: smooth;
 }
@@ -28,6 +35,7 @@ p.small {
     font-size: 16px;
 }
 
+.cv,
 a,
 a:hover,
 a:focus,
@@ -224,16 +232,16 @@ header .intro-text .skills {
     }
 }
 
-.navbar {
-    display: flex;
+.navbar, .cv{
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
-    text-shadow: 1px 1px 3px #053446 #ffffff;
+    color: #007bff;
     min-height: 5rem;
+    text-shadow: 0 0 1px black, 0 0 2px black;
 }
 
-.navbar a:hover {
+.navbar a:hover{
     opacity: 1;
     background-color: #61767e;
 }
@@ -270,6 +278,13 @@ header .intro-text .skills {
     float: right;
     width: fit-content;
     }
+}
+
+.navbar .container{
+    margin-left : 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 section {
     padding: 100px 0;
@@ -426,10 +441,30 @@ section#work{
     margin: auto;
 }
 
-footer {
+footer{
     color: #fff;
     text-shadow: 0 0 1px black, 0 0 2px black;
     background:#5d6979;
+}
+
+.cv{
+    box-sizing: border-box;
+    padding: .25rem .45rem;
+    margin: .5em;
+    width: 135px;
+}
+
+.cv>a:hover{
+    background-color: inherit;
+}
+
+.cv>a>img{
+    transition: 0.5s;
+    width: 32px;
+}
+
+.cv>a>img:hover{
+    width: 25px;
 }
 
 footer h3 {
@@ -525,8 +560,8 @@ section.container,
     color: #6acef3;
 }
 
-.carousel-item{   
-
+#carousel-item{   
+    
     
 }
 .carousel-item-img{
@@ -538,6 +573,7 @@ section.container,
     overflow: hidden;
     border-radius: 3px;
     box-sizing: border-box;
+    height: 25em;
 }
 
 .carousel-item-img img{
@@ -603,11 +639,10 @@ span{
 }
 
 #navbar-toggler {
-    border-color: #007bff;
-    background-color: #007bff;
+    border: 2px solid #007bff;
 }
 #navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(51, 204, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .email-icon{
