@@ -218,7 +218,7 @@ header .intro-text .skills {
 nav,
 footer {
     background: #2c3e50;
-    animation: colorchange 10s;
+    animation: colorchange 10s infinite;
 }
 
 @keyframes colorchange {
