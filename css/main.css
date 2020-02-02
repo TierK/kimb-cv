@@ -448,6 +448,15 @@ section#work {
     margin: auto;
 }
 
+.prog{
+  background-color: #e7eefa;
+}
+
+.prog em{
+    color: #007bff;
+}
+
+
 footer {
     color: #fff;
     text-shadow: 0 0 1px black, 0 0 2px black;
